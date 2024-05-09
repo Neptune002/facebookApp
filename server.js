@@ -18,6 +18,6 @@ mongoose.connect(process.env.CONN_STR, {
 .then(()=>{
     console.log('database connection successful')
 })
-app.listen(process.env.PORT, ()=>{
+app.listen(process.env.PORT || 3000, ()=>{
     console.log(`server started on port ${process.env.PORT}`)
 })
