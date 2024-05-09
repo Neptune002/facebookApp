@@ -1,0 +1,278 @@
+@media screen and (max-width:720px){
+    body {
+        display: flex;
+        height:100vh;
+        justify-content:flex-start;
+        align-items: center;
+        background-color: white;
+        flex-direction: column;
+    }
+    div#line{
+        display: none;
+    }
+    div#facebook{
+        color: rgb(2, 136, 226);
+        border:none;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 30px;
+        font-weight: bolder ;
+        margin-top: 50px;
+        letter-spacing: -1px;
+    }
+form#form {
+    margin-top: 30px;
+    width: 300px;
+}
+input#mobile{
+width: 100%; 
+height: 37px;  
+background-color: rgba(128,128,128, 0.048);
+border: none; 
+border-radius: 10px;
+}   
+input#mobile:focus{
+    outline: 1px solid gray;
+
+} 
+input#password{
+    width: 100%; 
+    height: 37px;  
+    background-color: rgba(128, 128, 138, 0.048);
+    border: none; 
+    border-radius: 10px;
+    outline: none;
+    margin-top: -9px;
+    } 
+input#password:focus{
+    outline:1px solid gray;
+}
+input#mobile::placeholder{
+    font-weight: bold;
+    color: rgba(138, 130, 130, 0.664);
+    font-size:12px;
+}
+input#password::placeholder{
+    font-weight: bold;
+    color: rgba(138, 130, 130, 0.664);
+    font-size:12px;
+}
+button#submit{
+    width: 100%;
+    height: 37px;  
+    background-color:  rgb(2, 136, 226);
+    border-radius: 10px;
+    color: white;
+    font-size: 14px;
+    margin-top: 30px;
+    border: none;
+    font-weight: bold;
+}  
+button#submit:active{
+    width: 100%;
+    height: 37px;  
+    background-color: rgb(26, 26, 184);
+    border-radius: 10px;
+    color: white;
+    font-size: 14px;
+    margin-top: 30px;
+    border: none;
+    font-weight: bold;
+}  
+a#forgotten{
+    margin-top: 20px;
+    color: blue;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+    font-size: 14px;
+}
+div#or_container{
+    width: 300px;
+    height: 30px;
+    border-bottom:2px solid grey;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-content: flex-end;
+    
+}
+h3#or{
+position:absolute;
+top: 11px;
+background-color: white;
+display: flex;
+justify-content: center;
+width: 40px;
+font-size: 12px;
+
+}
+div#create{
+    width: 200px;
+    height: 35px;
+    background-color: green;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+}
+div#about{
+    margin-top: 115px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    word-spacing: 15px;
+     font-size: 12px;
+}
+div#meta{
+    margin-top: 17px;
+    color: rgb(112, 105, 105);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+}
+#copy{
+    font-size: 20px;
+    color: black;
+    font-weight: bolder;
+    position: relative;
+    top: 3px;
+}
+
+div.con{
+    height:20px;
+    width:50px;
+    background-color:green;
+    display:none;
+}
+div#incontainer{
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
+    align-items:center;
+}
+}
+
+@media screen and (min-width:720.1px){
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    height: 100vh;
+    width:100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(175, 167, 167, 0.13);
+
+}
+div.rt_ct {
+    height: 35vw;
+    width: 40vw;
+    margin-right: 40px; 
+    border-radius: 10px;  
+    background-color: white;
+    position: relative;
+
+}
+form#form{
+    width: 93%;
+    margin-left: 1.4vw;
+    margin-top: 10px;
+
+}
+input#mobile,input#password, button#submit{
+    width: 100%;
+    height: 4.5vw;
+    border-radius: 6px;
+    border: none;
+    border: 1.5px solid rgba(128, 128, 128, 0.253);
+    outline: 1.5px solid rgba(128, 128, 128, 0.253);;
+}
+input#password{
+    margin-top: 1vw;
+
+}
+input#mobile{
+    margin-bottom: -36px;
+
+}
+input#password::placeholder{
+font-size: 1em;
+}
+input#mobile::placeholder{
+    font-size: 1em;
+
+}
+button#submit{
+    background-color: rgb(2, 136, 226);
+    margin-top: 1vw;
+    font-size: 1.5vw;
+    font-weight: bold;
+    color: white;
+}
+div#incontainer{
+    display: flex;
+    flex-direction: column;
+    height: 15vw;
+    align-items: center;
+    width: 100%;
+}div#about, div#meta, h3#or{
+    display: none;
+
+}
+
+
+a#forgotten{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+    margin-top: 2vw;
+    font-size: 1.6vw;
+    margin-bottom: 10vw;
+    
+}
+div#create{
+    background-color: green;
+    width: 20vw;
+    height: 5vw;
+    font-size: 1.8vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    position: absolute; 
+    border-radius: 5px;
+    top: 15em;
+    
+}
+div#facebook{
+    font-size: 8vw;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(2, 136, 226);
+    font-weight: bold;
+    letter-spacing: -4px;
+}
+div.con{
+    font-size: 1.9vw;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+div#left_ct{
+    margin-left: 2vw;
+}
+div#line {
+    border-bottom: 2px solid rgb(221, 216, 216);
+    width: 37vw;
+    height: 1px;
+    top: 24vw;
+    position: absolute;
+}
+}
+
+
+
